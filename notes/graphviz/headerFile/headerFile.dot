@@ -1,0 +1,38 @@
+digraph headerFile
+{
+	"U/L/types.h" 			-> "types.h";
+	
+	// init.h
+	"types.h"				-> "init.h";
+	"compiler.h"			-> "init.h";
+	
+	// compiler.h
+	"compiler-gcc.h"		-> "compiler.h";
+	"compiler-intel.h"		-> "compiler.h";
+	
+	// ioport.h
+	"types.h"				-> "ioport.h";
+	"compiler.h"			-> "ioport.h";
+	
+	// list.h
+	"types.h"				-> "list.h";
+	"stddef.h"				-> "list.h";
+	"poison.h"				-> "list.h";
+	"const.h"				-> "list.h";
+	
+	// errno.h
+	"U/L/errno.h"			-> "errno.h";
+	
+	// kobject.h
+	"types.h"				-> "kobject.h";
+	"list.h"				-> "kobject.h";
+	"sysfs.h"				-> "kobject.h";
+	"compiler.h"			-> "kobject.h";
+	"spinlock.h"			-> "kobject.h";
+	"kref.h"				-> "kobject.h";
+	"kobject_ns.h"			-> "kobject.h";
+	"kernel.h"				-> "kobject.h";
+	"wait.h"				-> "kobject.h";
+	"atomic.h"				-> "kobject.h";
+	"workqueue.h"			-> "kobject.h";
+}
