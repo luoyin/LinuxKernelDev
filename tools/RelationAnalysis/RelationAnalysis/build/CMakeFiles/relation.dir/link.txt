@@ -1,0 +1,1 @@
+/usr/bin/c++   -g    CMakeFiles/relation.dir/relation.o CMakeFiles/relation.dir/lib/CBaseList.o CMakeFiles/relation.dir/lib/CRelationHeaderFile.o  -o relation -rdynamic 

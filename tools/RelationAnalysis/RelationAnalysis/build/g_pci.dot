@@ -1,0 +1,716 @@
+digraph linux_pci_h {
+// linux/pci.h
+    "linux/pci.h" -> "linux/mod_devicetable.h";
+    "linux/pci.h" -> "linux/types.h";
+    "linux/pci.h" -> "linux/init.h";
+    "linux/pci.h" -> "linux/ioport.h";
+    "linux/pci.h" -> "linux/list.h";
+    "linux/pci.h" -> "linux/compiler.h";
+    "linux/pci.h" -> "linux/errno.h";
+    "linux/pci.h" -> "linux/kobject.h";
+    "linux/pci.h" -> "linux/atomic.h";
+    "linux/pci.h" -> "linux/device.h";
+    "linux/pci.h" -> "linux/io.h";
+    "linux/pci.h" -> "linux/irqreturn.h";
+    "linux/pci.h" -> "uapi/linux/pci.h";
+    "linux/pci.h" -> "linux/pci_ids.h";
+    "linux/pci.h" -> "linux/pci-dma.h";
+    "linux/pci.h" -> "linux/dmapool.h";
+    "linux/pci.h" -> "asm/pci.h";
+// linux/mod_devicetable.h
+    "linux/mod_devicetable.h" -> "linux/types.h";
+    "linux/mod_devicetable.h" -> "linux/uuid.h";
+// linux/types.h
+    "linux/types.h" -> "uapi/linux/types.h";
+    "uapi/linux/types.h" [style="filled", fillcolor="green"];
+// uapi/linux/types.h
+// linux/uuid.h
+    "linux/uuid.h" -> "uapi/linux/uuid.h";
+    "uapi/linux/uuid.h" [style="filled", fillcolor="green"];
+// uapi/linux/uuid.h
+// linux/init.h
+    "linux/init.h" -> "linux/compiler.h";
+    "linux/init.h" -> "linux/types.h";
+// linux/compiler.h
+    "linux/compiler.h" -> "linux/compiler-gcc.h";
+    "linux/compiler.h" -> "uapi/linux/types.h";
+    "linux/compiler-gcc.h" [style="filled", fillcolor="green"];
+// linux/compiler-gcc.h
+// linux/ioport.h
+    "linux/ioport.h" -> "linux/compiler.h";
+    "linux/ioport.h" -> "linux/types.h";
+// linux/list.h
+    "linux/list.h" -> "linux/types.h";
+    "linux/list.h" -> "linux/stddef.h";
+    "linux/list.h" -> "linux/poison.h";
+    "linux/list.h" -> "linux/const.h";
+// linux/stddef.h
+    "linux/stddef.h" -> "uapi/linux/stddef.h";
+    "uapi/linux/stddef.h" [style="filled", fillcolor="green"];
+// uapi/linux/stddef.h
+    "linux/poison.h" [style="filled", fillcolor="green"];
+// linux/poison.h
+    "linux/const.h" [style="filled", fillcolor="green"];
+// linux/const.h
+// linux/errno.h
+    "linux/errno.h" -> "uapi/linux/errno.h";
+    "uapi/linux/errno.h" [style="filled", fillcolor="green"];
+// uapi/linux/errno.h
+// linux/kobject.h
+    "linux/kobject.h" -> "linux/types.h";
+    "linux/kobject.h" -> "linux/list.h";
+    "linux/kobject.h" -> "linux/sysfs.h";
+    "linux/kobject.h" -> "linux/compiler.h";
+    "linux/kobject.h" -> "linux/spinlock.h";
+    "linux/kobject.h" -> "linux/kref.h";
+    "linux/kobject.h" -> "linux/kobject_ns.h";
+    "linux/kobject.h" -> "linux/kernel.h";
+    "linux/kobject.h" -> "linux/wait.h";
+    "linux/kobject.h" -> "linux/atomic.h";
+    "linux/kobject.h" -> "linux/workqueue.h";
+// linux/sysfs.h
+    "linux/sysfs.h" -> "linux/compiler.h";
+    "linux/sysfs.h" -> "linux/errno.h";
+    "linux/sysfs.h" -> "linux/list.h";
+    "linux/sysfs.h" -> "linux/lockdep.h";
+    "linux/sysfs.h" -> "linux/kobject_ns.h";
+    "linux/sysfs.h" -> "linux/stat.h";
+    "linux/sysfs.h" -> "linux/atomic.h";
+// linux/lockdep.h
+    "linux/lockdep.h" -> "linux/linkage.h";
+    "linux/lockdep.h" -> "linux/list.h";
+    "linux/lockdep.h" -> "linux/debug_locks.h";
+    "linux/lockdep.h" -> "linux/stacktrace.h";
+// linux/linkage.h
+    "linux/linkage.h" -> "linux/compiler.h";
+    "linux/linkage.h" -> "linux/stringify.h";
+    "linux/linkage.h" -> "linux/export.h";
+    "linux/linkage.h" -> "asm/linkage.h";
+    "linux/stringify.h" [style="filled", fillcolor="green"];
+// linux/stringify.h
+    "linux/export.h" [style="filled", fillcolor="green"];
+// linux/export.h
+    "asm/linkage.h" [style="filled", fillcolor="green"];
+// asm/linkage.h
+// linux/debug_locks.h
+    "linux/debug_locks.h" -> "linux/kernel.h";
+    "linux/debug_locks.h" -> "linux/atomic.h";
+    "linux/debug_locks.h" -> "linux/bug.h";
+// linux/kernel.h
+    "linux/kernel.h" -> "stdarg.h";
+    "linux/kernel.h" -> "linux/linkage.h";
+    "linux/kernel.h" -> "linux/stddef.h";
+    "linux/kernel.h" -> "linux/types.h";
+    "linux/kernel.h" -> "linux/compiler.h";
+    "linux/kernel.h" -> "linux/bitops.h";
+    "linux/kernel.h" -> "linux/log2.h";
+    "linux/kernel.h" -> "linux/typecheck.h";
+    "linux/kernel.h" -> "linux/printk.h";
+    "linux/kernel.h" -> "linux/dynamic_debug.h";
+    "linux/kernel.h" -> "asm/byteorder.h";
+    "linux/kernel.h" -> "uapi/linux/kernel.h";
+    "stdarg.h" [style="filled", fillcolor="green"];
+// stdarg.h
+// linux/bitops.h
+    "linux/bitops.h" -> "asm/types.h";
+    "linux/bitops.h" -> "asm/bitops.h";
+    "asm/types.h" [style="filled", fillcolor="green"];
+// asm/types.h
+    "asm/bitops.h" [style="filled", fillcolor="green"];
+// asm/bitops.h
+// linux/log2.h
+    "linux/log2.h" -> "linux/types.h";
+    "linux/log2.h" -> "linux/bitops.h";
+    "linux/typecheck.h" [style="filled", fillcolor="green"];
+// linux/typecheck.h
+// linux/printk.h
+    "linux/printk.h" -> "stdarg.h";
+    "linux/printk.h" -> "linux/init.h";
+    "linux/printk.h" -> "linux/kern_levels.h";
+    "linux/printk.h" -> "linux/linkage.h";
+    "linux/printk.h" -> "linux/dynamic_debug.h";
+    "linux/kern_levels.h" [style="filled", fillcolor="green"];
+// linux/kern_levels.h
+// linux/dynamic_debug.h
+    "linux/dynamic_debug.h" -> "linux/string.h";
+    "linux/dynamic_debug.h" -> "linux/errno.h";
+// linux/string.h
+    "linux/string.h" -> "linux/compiler.h";
+    "linux/string.h" -> "linux/types.h";
+    "linux/string.h" -> "linux/stddef.h";
+    "linux/string.h" -> "stdarg.h";
+    "linux/string.h" -> "uapi/linux/string.h";
+    "linux/string.h" -> "asm/string.h";
+    "uapi/linux/string.h" [style="filled", fillcolor="green"];
+// uapi/linux/string.h
+    "asm/string.h" [style="filled", fillcolor="green"];
+// asm/string.h
+    "asm/byteorder.h" [style="filled", fillcolor="green"];
+// asm/byteorder.h
+    "uapi/linux/kernel.h" [style="filled", fillcolor="green"];
+// uapi/linux/kernel.h
+// linux/atomic.h
+    "linux/atomic.h" -> "asm/atomic.h";
+    "linux/atomic.h" -> "asm-generic/atomic-long.h";
+    "linux/atomic.h" -> "asm-generic/atomic64.h";
+    "asm/atomic.h" [style="filled", fillcolor="green"];
+// asm/atomic.h
+    "asm-generic/atomic-long.h" [style="filled", fillcolor="green"];
+// asm-generic/atomic-long.h
+    "asm-generic/atomic64.h" [style="filled", fillcolor="green"];
+// asm-generic/atomic64.h
+// linux/bug.h
+    "linux/bug.h" -> "asm/bug.h";
+    "linux/bug.h" -> "linux/compiler.h";
+    "linux/bug.h" -> "asm-generic/bug.h";
+    "asm/bug.h" [style="filled", fillcolor="green"];
+// asm/bug.h
+    "asm-generic/bug.h" [style="filled", fillcolor="green"];
+// asm-generic/bug.h
+    "linux/stacktrace.h" [style="filled", fillcolor="green"];
+// linux/stacktrace.h
+    "linux/kobject_ns.h" [style="filled", fillcolor="green"];
+// linux/kobject_ns.h
+// linux/stat.h
+    "linux/stat.h" -> "asm/stat.h";
+    "linux/stat.h" -> "uapi/linux/stat.h";
+    "linux/stat.h" -> "linux/types.h";
+    "linux/stat.h" -> "linux/time.h";
+    "linux/stat.h" -> "linux/uidgid.h";
+    "asm/stat.h" [style="filled", fillcolor="green"];
+// asm/stat.h
+    "uapi/linux/stat.h" [style="filled", fillcolor="green"];
+// uapi/linux/stat.h
+// linux/time.h
+    "linux/time.h" -> "uapi/linux/time.h";
+    "uapi/linux/time.h" [style="filled", fillcolor="green"];
+// uapi/linux/time.h
+// linux/uidgid.h
+    "linux/uidgid.h" -> "linux/types.h";
+    "linux/uidgid.h" -> "linux/highuid.h";
+// linux/highuid.h
+    "linux/highuid.h" -> "linux/types.h";
+// linux/spinlock.h
+    "linux/spinlock.h" -> "linux/typecheck.h";
+    "linux/spinlock.h" -> "linux/preempt.h";
+    "linux/spinlock.h" -> "linux/linkage.h";
+    "linux/spinlock.h" -> "linux/compiler.h";
+    "linux/spinlock.h" -> "linux/irqflags.h";
+    "linux/spinlock.h" -> "linux/thread_info.h";
+    "linux/spinlock.h" -> "linux/kernel.h";
+    "linux/spinlock.h" -> "linux/stringify.h";
+    "linux/spinlock.h" -> "linux/bottom_half.h";
+    "linux/spinlock.h" -> "asm/barrier.h";
+    "linux/spinlock.h" -> "linux/spinlock_types.h";
+    "linux/spinlock.h" -> "linux/rwlock.h";
+    "linux/spinlock.h" -> "linux/atomic.h";
+// linux/preempt.h
+    "linux/preempt.h" -> "linux/thread_info.h";
+    "linux/preempt.h" -> "linux/linkage.h";
+    "linux/preempt.h" -> "linux/list.h";
+// linux/thread_info.h
+    "linux/thread_info.h" -> "linux/types.h";
+    "linux/thread_info.h" -> "linux/bug.h";
+    "linux/thread_info.h" -> "linux/bitops.h";
+    "linux/thread_info.h" -> "asm/thread_info.h";
+    "asm/thread_info.h" [style="filled", fillcolor="green"];
+// asm/thread_info.h
+// linux/irqflags.h
+    "linux/irqflags.h" -> "linux/typecheck.h";
+    "linux/irqflags.h" -> "asm/irqflags.h";
+    "asm/irqflags.h" [style="filled", fillcolor="green"];
+// asm/irqflags.h
+    "linux/bottom_half.h" [style="filled", fillcolor="green"];
+// linux/bottom_half.h
+    "asm/barrier.h" [style="filled", fillcolor="green"];
+// asm/barrier.h
+// linux/spinlock_types.h
+    "linux/spinlock_types.h" -> "linux/lockdep.h";
+    "linux/spinlock_types.h" -> "linux/rwlock_types.h";
+    "linux/rwlock_types.h" [style="filled", fillcolor="green"];
+// linux/rwlock_types.h
+    "linux/rwlock.h" [style="filled", fillcolor="green"];
+// linux/rwlock.h
+// linux/kref.h
+    "linux/kref.h" -> "linux/bug.h";
+    "linux/kref.h" -> "linux/atomic.h";
+    "linux/kref.h" -> "linux/kernel.h";
+    "linux/kref.h" -> "linux/mutex.h";
+    "linux/kref.h" -> "linux/spinlock.h";
+// linux/mutex.h
+    "linux/mutex.h" -> "asm/current.h";
+    "linux/mutex.h" -> "linux/list.h";
+    "linux/mutex.h" -> "linux/spinlock_types.h";
+    "linux/mutex.h" -> "linux/linkage.h";
+    "linux/mutex.h" -> "linux/lockdep.h";
+    "linux/mutex.h" -> "linux/atomic.h";
+    "linux/mutex.h" -> "asm/processor.h";
+    "asm/current.h" [style="filled", fillcolor="green"];
+// asm/current.h
+    "asm/processor.h" [style="filled", fillcolor="green"];
+// asm/processor.h
+// linux/wait.h
+    "linux/wait.h" -> "linux/list.h";
+    "linux/wait.h" -> "linux/stddef.h";
+    "linux/wait.h" -> "linux/spinlock.h";
+    "linux/wait.h" -> "asm/current.h";
+    "linux/wait.h" -> "uapi/linux/wait.h";
+    "uapi/linux/wait.h" [style="filled", fillcolor="green"];
+// uapi/linux/wait.h
+// linux/workqueue.h
+    "linux/workqueue.h" -> "linux/timer.h";
+    "linux/workqueue.h" -> "linux/linkage.h";
+    "linux/workqueue.h" -> "linux/bitops.h";
+    "linux/workqueue.h" -> "linux/lockdep.h";
+    "linux/workqueue.h" -> "linux/threads.h";
+    "linux/workqueue.h" -> "linux/atomic.h";
+    "linux/workqueue.h" -> "linux/cpumask.h";
+// linux/timer.h
+    "linux/timer.h" -> "linux/list.h";
+    "linux/timer.h" -> "linux/ktime.h";
+    "linux/timer.h" -> "linux/stddef.h";
+    "linux/timer.h" -> "linux/debugobjects.h";
+    "linux/timer.h" -> "linux/stringify.h";
+// linux/ktime.h
+    "linux/ktime.h" -> "linux/time.h";
+    "linux/ktime.h" -> "linux/jiffies.h";
+// linux/jiffies.h
+    "linux/jiffies.h" -> "linux/math64.h";
+    "linux/jiffies.h" -> "linux/kernel.h";
+    "linux/jiffies.h" -> "linux/types.h";
+    "linux/jiffies.h" -> "linux/time.h";
+    "linux/jiffies.h" -> "linux/timex.h";
+    "linux/jiffies.h" -> "asm/param.h";
+// linux/math64.h
+    "linux/math64.h" -> "linux/types.h";
+    "linux/math64.h" -> "asm/div64.h";
+    "asm/div64.h" [style="filled", fillcolor="green"];
+// asm/div64.h
+// linux/timex.h
+    "linux/timex.h" -> "uapi/linux/timex.h";
+    "linux/timex.h" -> "linux/compiler.h";
+    "linux/timex.h" -> "linux/types.h";
+    "linux/timex.h" -> "linux/param.h";
+    "linux/timex.h" -> "asm/timex.h";
+    "uapi/linux/timex.h" [style="filled", fillcolor="green"];
+// uapi/linux/timex.h
+    "linux/param.h" [style="filled", fillcolor="green"];
+// linux/param.h
+    "asm/timex.h" [style="filled", fillcolor="green"];
+// asm/timex.h
+    "asm/param.h" [style="filled", fillcolor="green"];
+// asm/param.h
+// linux/debugobjects.h
+    "linux/debugobjects.h" -> "linux/list.h";
+    "linux/debugobjects.h" -> "linux/spinlock.h";
+    "linux/threads.h" [style="filled", fillcolor="green"];
+// linux/threads.h
+// linux/cpumask.h
+    "linux/cpumask.h" -> "linux/kernel.h";
+    "linux/cpumask.h" -> "linux/threads.h";
+    "linux/cpumask.h" -> "linux/bitmap.h";
+    "linux/cpumask.h" -> "linux/bug.h";
+// linux/bitmap.h
+    "linux/bitmap.h" -> "linux/types.h";
+    "linux/bitmap.h" -> "linux/bitops.h";
+    "linux/bitmap.h" -> "linux/string.h";
+    "linux/bitmap.h" -> "linux/kernel.h";
+// linux/device.h
+    "linux/device.h" -> "linux/ioport.h";
+    "linux/device.h" -> "linux/kobject.h";
+    "linux/device.h" -> "linux/klist.h";
+    "linux/device.h" -> "linux/list.h";
+    "linux/device.h" -> "linux/lockdep.h";
+    "linux/device.h" -> "linux/compiler.h";
+    "linux/device.h" -> "linux/types.h";
+    "linux/device.h" -> "linux/mutex.h";
+    "linux/device.h" -> "linux/pinctrl/devinfo.h";
+    "linux/device.h" -> "linux/pm.h";
+    "linux/device.h" -> "linux/atomic.h";
+    "linux/device.h" -> "linux/ratelimit.h";
+    "linux/device.h" -> "linux/uidgid.h";
+    "linux/device.h" -> "asm/device.h";
+    "linux/device.h" -> "linux/pm_wakeup.h";
+// linux/klist.h
+    "linux/klist.h" -> "linux/spinlock.h";
+    "linux/klist.h" -> "linux/kref.h";
+    "linux/klist.h" -> "linux/list.h";
+// linux/pinctrl/devinfo.h
+    "linux/pinctrl/devinfo.h" -> "linux/pinctrl/consumer.h";
+// linux/pinctrl/consumer.h
+    "linux/pinctrl/consumer.h" -> "linux/err.h";
+    "linux/pinctrl/consumer.h" -> "linux/list.h";
+    "linux/pinctrl/consumer.h" -> "linux/seq_file.h";
+    "linux/pinctrl/consumer.h" -> "linux/pinctrl/pinctrl-state.h";
+// linux/err.h
+    "linux/err.h" -> "linux/compiler.h";
+    "linux/err.h" -> "asm/errno.h";
+    "asm/errno.h" [style="filled", fillcolor="green"];
+// asm/errno.h
+// linux/seq_file.h
+    "linux/seq_file.h" -> "linux/types.h";
+    "linux/seq_file.h" -> "linux/string.h";
+    "linux/seq_file.h" -> "linux/bug.h";
+    "linux/seq_file.h" -> "linux/mutex.h";
+    "linux/seq_file.h" -> "linux/cpumask.h";
+    "linux/seq_file.h" -> "linux/nodemask.h";
+// linux/nodemask.h
+    "linux/nodemask.h" -> "linux/kernel.h";
+    "linux/nodemask.h" -> "linux/threads.h";
+    "linux/nodemask.h" -> "linux/bitmap.h";
+    "linux/nodemask.h" -> "linux/numa.h";
+    "linux/numa.h" [style="filled", fillcolor="green"];
+// linux/numa.h
+    "linux/pinctrl/pinctrl-state.h" [style="filled", fillcolor="green"];
+// linux/pinctrl/pinctrl-state.h
+// linux/pm.h
+    "linux/pm.h" -> "linux/list.h";
+    "linux/pm.h" -> "linux/workqueue.h";
+    "linux/pm.h" -> "linux/spinlock.h";
+    "linux/pm.h" -> "linux/wait.h";
+    "linux/pm.h" -> "linux/timer.h";
+    "linux/pm.h" -> "linux/completion.h";
+// linux/completion.h
+    "linux/completion.h" -> "linux/wait.h";
+// linux/ratelimit.h
+    "linux/ratelimit.h" -> "linux/param.h";
+    "linux/ratelimit.h" -> "linux/sched.h";
+    "linux/ratelimit.h" -> "linux/spinlock.h";
+// linux/sched.h
+    "linux/sched.h" -> "uapi/linux/sched.h";
+    "linux/sched.h" -> "asm/param.h";
+    "linux/sched.h" -> "linux/capability.h";
+    "linux/sched.h" -> "linux/threads.h";
+    "linux/sched.h" -> "linux/kernel.h";
+    "linux/sched.h" -> "linux/types.h";
+    "linux/sched.h" -> "linux/timex.h";
+    "linux/sched.h" -> "linux/jiffies.h";
+    "linux/sched.h" -> "linux/rbtree.h";
+    "linux/sched.h" -> "linux/thread_info.h";
+    "linux/sched.h" -> "linux/cpumask.h";
+    "linux/sched.h" -> "linux/errno.h";
+    "linux/sched.h" -> "linux/nodemask.h";
+    "linux/sched.h" -> "linux/mm_types.h";
+    "linux/sched.h" -> "asm/page.h";
+    "linux/sched.h" -> "asm/ptrace.h";
+    "linux/sched.h" -> "asm/cputime.h";
+    "linux/sched.h" -> "linux/smp.h";
+    "linux/sched.h" -> "linux/sem.h";
+    "linux/sched.h" -> "linux/signal.h";
+    "linux/sched.h" -> "linux/compiler.h";
+    "linux/sched.h" -> "linux/completion.h";
+    "linux/sched.h" -> "linux/pid.h";
+    "linux/sched.h" -> "linux/percpu.h";
+    "linux/sched.h" -> "linux/topology.h";
+    "linux/sched.h" -> "linux/proportions.h";
+    "linux/sched.h" -> "linux/seccomp.h";
+    "linux/sched.h" -> "linux/rcupdate.h";
+    "linux/sched.h" -> "linux/rculist.h";
+    "linux/sched.h" -> "linux/rtmutex.h";
+    "linux/sched.h" -> "linux/time.h";
+    "linux/sched.h" -> "linux/param.h";
+    "linux/sched.h" -> "linux/resource.h";
+    "linux/sched.h" -> "linux/timer.h";
+    "linux/sched.h" -> "linux/hrtimer.h";
+    "linux/sched.h" -> "linux/task_io_accounting.h";
+    "linux/sched.h" -> "linux/latencytop.h";
+    "linux/sched.h" -> "linux/cred.h";
+    "linux/sched.h" -> "linux/llist.h";
+    "linux/sched.h" -> "linux/uidgid.h";
+    "linux/sched.h" -> "linux/gfp.h";
+    "linux/sched.h" -> "asm/processor.h";
+    "linux/sched.h" -> "linux/spinlock.h";
+    "linux/sched.h" -> "linux/rwsem.h";
+    "linux/sched.h" -> "asm/current.h";
+    "uapi/linux/sched.h" [style="filled", fillcolor="green"];
+// uapi/linux/sched.h
+// linux/capability.h
+    "linux/capability.h" -> "uapi/linux/capability.h";
+    "uapi/linux/capability.h" [style="filled", fillcolor="green"];
+// uapi/linux/capability.h
+// linux/rbtree.h
+    "linux/rbtree.h" -> "linux/kernel.h";
+    "linux/rbtree.h" -> "linux/stddef.h";
+// linux/mm_types.h
+    "linux/mm_types.h" -> "linux/auxvec.h";
+    "linux/mm_types.h" -> "linux/types.h";
+    "linux/mm_types.h" -> "linux/threads.h";
+    "linux/mm_types.h" -> "linux/list.h";
+    "linux/mm_types.h" -> "linux/spinlock.h";
+    "linux/mm_types.h" -> "linux/rbtree.h";
+    "linux/mm_types.h" -> "linux/rwsem.h";
+    "linux/mm_types.h" -> "linux/completion.h";
+    "linux/mm_types.h" -> "linux/cpumask.h";
+    "linux/mm_types.h" -> "linux/page-debug-flags.h";
+    "linux/mm_types.h" -> "linux/uprobes.h";
+    "linux/mm_types.h" -> "linux/page-flags-layout.h";
+    "linux/mm_types.h" -> "asm/page.h";
+    "linux/mm_types.h" -> "asm/mmu.h";
+// linux/auxvec.h
+    "linux/auxvec.h" -> "uapi/linux/auxvec.h";
+    "uapi/linux/auxvec.h" [style="filled", fillcolor="green"];
+// uapi/linux/auxvec.h
+// linux/rwsem.h
+    "linux/rwsem.h" -> "linux/linkage.h";
+    "linux/rwsem.h" -> "linux/types.h";
+    "linux/rwsem.h" -> "linux/kernel.h";
+    "linux/rwsem.h" -> "linux/list.h";
+    "linux/rwsem.h" -> "linux/spinlock.h";
+    "linux/rwsem.h" -> "linux/atomic.h";
+    "linux/rwsem.h" -> "linux/rwsem-spinlock.h";
+    "linux/rwsem.h" -> "asm/rwsem.h";
+    "linux/rwsem-spinlock.h" [style="filled", fillcolor="green"];
+// linux/rwsem-spinlock.h
+    "asm/rwsem.h" [style="filled", fillcolor="green"];
+// asm/rwsem.h
+    "linux/page-debug-flags.h" [style="filled", fillcolor="green"];
+// linux/page-debug-flags.h
+// linux/uprobes.h
+    "linux/uprobes.h" -> "linux/errno.h";
+    "linux/uprobes.h" -> "linux/rbtree.h";
+// linux/page-flags-layout.h
+    "linux/page-flags-layout.h" -> "linux/numa.h";
+    "linux/page-flags-layout.h" -> "generated/bounds.h";
+    "linux/page-flags-layout.h" -> "asm/sparsemem.h";
+    "generated/bounds.h" [style="filled", fillcolor="green"];
+// generated/bounds.h
+    "asm/sparsemem.h" [style="filled", fillcolor="green"];
+// asm/sparsemem.h
+    "asm/page.h" [style="filled", fillcolor="green"];
+// asm/page.h
+    "asm/mmu.h" [style="filled", fillcolor="green"];
+// asm/mmu.h
+    "asm/ptrace.h" [style="filled", fillcolor="green"];
+// asm/ptrace.h
+    "asm/cputime.h" [style="filled", fillcolor="green"];
+// asm/cputime.h
+// linux/smp.h
+    "linux/smp.h" -> "linux/errno.h";
+    "linux/smp.h" -> "linux/types.h";
+    "linux/smp.h" -> "linux/list.h";
+    "linux/smp.h" -> "linux/cpumask.h";
+    "linux/smp.h" -> "linux/init.h";
+    "linux/smp.h" -> "linux/preempt.h";
+    "linux/smp.h" -> "linux/kernel.h";
+    "linux/smp.h" -> "linux/compiler.h";
+    "linux/smp.h" -> "linux/thread_info.h";
+    "linux/smp.h" -> "asm/smp.h";
+    "asm/smp.h" [style="filled", fillcolor="green"];
+// asm/smp.h
+// linux/sem.h
+    "linux/sem.h" -> "linux/atomic.h";
+    "linux/sem.h" -> "linux/rcupdate.h";
+    "linux/sem.h" -> "linux/cache.h";
+    "linux/sem.h" -> "uapi/linux/sem.h";
+// linux/rcupdate.h
+    "linux/rcupdate.h" -> "linux/types.h";
+    "linux/rcupdate.h" -> "linux/cache.h";
+    "linux/rcupdate.h" -> "linux/spinlock.h";
+    "linux/rcupdate.h" -> "linux/threads.h";
+    "linux/rcupdate.h" -> "linux/cpumask.h";
+    "linux/rcupdate.h" -> "linux/seqlock.h";
+    "linux/rcupdate.h" -> "linux/lockdep.h";
+    "linux/rcupdate.h" -> "linux/completion.h";
+    "linux/rcupdate.h" -> "linux/debugobjects.h";
+    "linux/rcupdate.h" -> "linux/bug.h";
+    "linux/rcupdate.h" -> "linux/compiler.h";
+    "linux/rcupdate.h" -> "linux/rcutree.h";
+    "linux/rcupdate.h" -> "linux/rcutiny.h";
+// linux/cache.h
+    "linux/cache.h" -> "linux/kernel.h";
+    "linux/cache.h" -> "asm/cache.h";
+    "asm/cache.h" [style="filled", fillcolor="green"];
+// asm/cache.h
+// linux/seqlock.h
+    "linux/seqlock.h" -> "linux/spinlock.h";
+    "linux/seqlock.h" -> "linux/preempt.h";
+    "linux/seqlock.h" -> "asm/processor.h";
+    "linux/rcutree.h" [style="filled", fillcolor="green"];
+// linux/rcutree.h
+// linux/rcutiny.h
+    "linux/rcutiny.h" -> "linux/cache.h";
+    "uapi/linux/sem.h" [style="filled", fillcolor="green"];
+// uapi/linux/sem.h
+// linux/signal.h
+    "linux/signal.h" -> "linux/list.h";
+    "linux/signal.h" -> "uapi/linux/signal.h";
+    "linux/signal.h" -> "linux/bitops.h";
+    "linux/signal.h" -> "linux/string.h";
+    "uapi/linux/signal.h" [style="filled", fillcolor="green"];
+// uapi/linux/signal.h
+// linux/pid.h
+    "linux/pid.h" -> "linux/rcupdate.h";
+// linux/percpu.h
+    "linux/percpu.h" -> "linux/preempt.h";
+    "linux/percpu.h" -> "linux/smp.h";
+    "linux/percpu.h" -> "linux/cpumask.h";
+    "linux/percpu.h" -> "linux/pfn.h";
+    "linux/percpu.h" -> "linux/init.h";
+    "linux/percpu.h" -> "asm/percpu.h";
+// linux/pfn.h
+    "linux/pfn.h" -> "linux/types.h";
+    "asm/percpu.h" [style="filled", fillcolor="green"];
+// asm/percpu.h
+// linux/topology.h
+    "linux/topology.h" -> "linux/cpumask.h";
+    "linux/topology.h" -> "linux/bitops.h";
+    "linux/topology.h" -> "linux/mmzone.h";
+    "linux/topology.h" -> "linux/smp.h";
+    "linux/topology.h" -> "linux/percpu.h";
+    "linux/topology.h" -> "asm/topology.h";
+// linux/mmzone.h
+    "linux/mmzone.h" -> "linux/spinlock.h";
+    "linux/mmzone.h" -> "linux/list.h";
+    "linux/mmzone.h" -> "linux/wait.h";
+    "linux/mmzone.h" -> "linux/bitops.h";
+    "linux/mmzone.h" -> "linux/cache.h";
+    "linux/mmzone.h" -> "linux/threads.h";
+    "linux/mmzone.h" -> "linux/numa.h";
+    "linux/mmzone.h" -> "linux/init.h";
+    "linux/mmzone.h" -> "linux/seqlock.h";
+    "linux/mmzone.h" -> "linux/nodemask.h";
+    "linux/mmzone.h" -> "linux/pageblock-flags.h";
+    "linux/mmzone.h" -> "linux/page-flags-layout.h";
+    "linux/mmzone.h" -> "linux/atomic.h";
+    "linux/mmzone.h" -> "asm/page.h";
+    "linux/mmzone.h" -> "linux/memory_hotplug.h";
+    "linux/mmzone.h" -> "asm/mmzone.h";
+    "linux/mmzone.h" -> "asm/sparsemem.h";
+// linux/pageblock-flags.h
+    "linux/pageblock-flags.h" -> "linux/types.h";
+// linux/memory_hotplug.h
+    "linux/memory_hotplug.h" -> "linux/mmzone.h";
+    "linux/memory_hotplug.h" -> "linux/spinlock.h";
+    "linux/memory_hotplug.h" -> "linux/notifier.h";
+    "linux/memory_hotplug.h" -> "linux/bug.h";
+// linux/notifier.h
+    "linux/notifier.h" -> "linux/errno.h";
+    "linux/notifier.h" -> "linux/mutex.h";
+    "linux/notifier.h" -> "linux/rwsem.h";
+    "linux/notifier.h" -> "linux/srcu.h";
+// linux/srcu.h
+    "linux/srcu.h" -> "linux/mutex.h";
+    "linux/srcu.h" -> "linux/rcupdate.h";
+    "linux/srcu.h" -> "linux/workqueue.h";
+    "asm/mmzone.h" [style="filled", fillcolor="green"];
+// asm/mmzone.h
+    "asm/topology.h" [style="filled", fillcolor="green"];
+// asm/topology.h
+// linux/proportions.h
+    "linux/proportions.h" -> "linux/percpu_counter.h";
+    "linux/proportions.h" -> "linux/spinlock.h";
+    "linux/proportions.h" -> "linux/mutex.h";
+// linux/percpu_counter.h
+    "linux/percpu_counter.h" -> "linux/spinlock.h";
+    "linux/percpu_counter.h" -> "linux/smp.h";
+    "linux/percpu_counter.h" -> "linux/list.h";
+    "linux/percpu_counter.h" -> "linux/threads.h";
+    "linux/percpu_counter.h" -> "linux/percpu.h";
+    "linux/percpu_counter.h" -> "linux/types.h";
+// linux/seccomp.h
+    "linux/seccomp.h" -> "uapi/linux/seccomp.h";
+    "linux/seccomp.h" -> "linux/thread_info.h";
+    "linux/seccomp.h" -> "asm/seccomp.h";
+    "linux/seccomp.h" -> "linux/errno.h";
+    "uapi/linux/seccomp.h" [style="filled", fillcolor="green"];
+// uapi/linux/seccomp.h
+    "asm/seccomp.h" [style="filled", fillcolor="green"];
+// asm/seccomp.h
+// linux/rculist.h
+    "linux/rculist.h" -> "linux/list.h";
+    "linux/rculist.h" -> "linux/rcupdate.h";
+// linux/rtmutex.h
+    "linux/rtmutex.h" -> "linux/linkage.h";
+    "linux/rtmutex.h" -> "linux/plist.h";
+    "linux/rtmutex.h" -> "linux/spinlock_types.h";
+// linux/plist.h
+    "linux/plist.h" -> "linux/kernel.h";
+    "linux/plist.h" -> "linux/list.h";
+// linux/resource.h
+    "linux/resource.h" -> "uapi/linux/resource.h";
+    "uapi/linux/resource.h" [style="filled", fillcolor="green"];
+// uapi/linux/resource.h
+// linux/hrtimer.h
+    "linux/hrtimer.h" -> "linux/rbtree.h";
+    "linux/hrtimer.h" -> "linux/ktime.h";
+    "linux/hrtimer.h" -> "linux/init.h";
+    "linux/hrtimer.h" -> "linux/list.h";
+    "linux/hrtimer.h" -> "linux/wait.h";
+    "linux/hrtimer.h" -> "linux/percpu.h";
+    "linux/hrtimer.h" -> "linux/timer.h";
+    "linux/hrtimer.h" -> "linux/timerqueue.h";
+// linux/timerqueue.h
+    "linux/timerqueue.h" -> "linux/rbtree.h";
+    "linux/timerqueue.h" -> "linux/ktime.h";
+    "linux/task_io_accounting.h" [style="filled", fillcolor="green"];
+// linux/task_io_accounting.h
+// linux/latencytop.h
+    "linux/latencytop.h" -> "linux/compiler.h";
+// linux/cred.h
+    "linux/cred.h" -> "linux/capability.h";
+    "linux/cred.h" -> "linux/init.h";
+    "linux/cred.h" -> "linux/key.h";
+    "linux/cred.h" -> "linux/selinux.h";
+    "linux/cred.h" -> "linux/atomic.h";
+    "linux/cred.h" -> "linux/uidgid.h";
+// linux/key.h
+    "linux/key.h" -> "linux/types.h";
+    "linux/key.h" -> "linux/list.h";
+    "linux/key.h" -> "linux/rbtree.h";
+    "linux/key.h" -> "linux/rcupdate.h";
+    "linux/key.h" -> "linux/sysctl.h";
+    "linux/key.h" -> "linux/rwsem.h";
+    "linux/key.h" -> "linux/atomic.h";
+    "linux/key.h" -> "linux/assoc_array.h";
+    "linux/key.h" -> "linux/uidgid.h";
+// linux/sysctl.h
+    "linux/sysctl.h" -> "linux/list.h";
+    "linux/sysctl.h" -> "linux/rcupdate.h";
+    "linux/sysctl.h" -> "linux/wait.h";
+    "linux/sysctl.h" -> "linux/rbtree.h";
+    "linux/sysctl.h" -> "uapi/linux/sysctl.h";
+    "uapi/linux/sysctl.h" [style="filled", fillcolor="green"];
+// uapi/linux/sysctl.h
+// linux/assoc_array.h
+    "linux/assoc_array.h" -> "linux/types.h";
+    "linux/selinux.h" [style="filled", fillcolor="green"];
+// linux/selinux.h
+// linux/llist.h
+    "linux/llist.h" -> "linux/kernel.h";
+    "linux/llist.h" -> "asm/cmpxchg.h";
+    "asm/cmpxchg.h" [style="filled", fillcolor="green"];
+// asm/cmpxchg.h
+// linux/gfp.h
+    "linux/gfp.h" -> "linux/mmzone.h";
+    "linux/gfp.h" -> "linux/stddef.h";
+    "linux/gfp.h" -> "linux/linkage.h";
+    "linux/gfp.h" -> "linux/topology.h";
+    "linux/gfp.h" -> "linux/mmdebug.h";
+    "linux/mmdebug.h" [style="filled", fillcolor="green"];
+// linux/mmdebug.h
+    "asm/device.h" [style="filled", fillcolor="green"];
+// asm/device.h
+// linux/pm_wakeup.h
+    "linux/pm_wakeup.h" -> "linux/types.h";
+// linux/io.h
+    "linux/io.h" -> "linux/types.h";
+    "linux/io.h" -> "asm/io.h";
+    "linux/io.h" -> "asm/page.h";
+    "asm/io.h" [style="filled", fillcolor="green"];
+// asm/io.h
+    "linux/irqreturn.h" [style="filled", fillcolor="green"];
+// linux/irqreturn.h
+    "uapi/linux/pci.h" [style="filled", fillcolor="green"];
+// uapi/linux/pci.h
+    "linux/pci_ids.h" [style="filled", fillcolor="green"];
+// linux/pci_ids.h
+    "linux/pci-dma.h" [style="filled", fillcolor="green"];
+// linux/pci-dma.h
+// linux/dmapool.h
+    "linux/dmapool.h" -> "asm/io.h";
+    "linux/dmapool.h" -> "asm/scatterlist.h";
+    "asm/scatterlist.h" [style="filled", fillcolor="green"];
+// asm/scatterlist.h
+    "asm/pci.h" [style="filled", fillcolor="green"];
+// asm/pci.h
+}
